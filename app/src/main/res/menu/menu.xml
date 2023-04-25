@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_one"
+        android:icon="@drawable/image_home"
+        app:showAsAction="always"
+        android:title="Item" />
+    <item
+        android:id="@+id/action_two"
+        android:title="Allergens" />
+    <item
+        android:id="@+id/action_three"
+        android:title="Map" />
+</menu>
