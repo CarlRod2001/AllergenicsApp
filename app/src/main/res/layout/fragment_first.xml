@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
-    <com.google.android.gms.maps.MapView
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/gmap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="A map is shown"
-        android:hint="Locations include restaurants"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        tools:layout="@layout/fragment_first"/>
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
 </FrameLayout>
