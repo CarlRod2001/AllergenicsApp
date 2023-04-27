@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.Toast
+import androidx.core.os.bundleOf
+import androidx.fragment.app.setFragmentResult
+import androidx.fragment.app.setFragmentResultListener
 
 
 class SecondFragment : Fragment() {
@@ -16,6 +19,8 @@ class SecondFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        //var entriesTop = arrayOf<CharSequence>()
+        //entriesTop.add("jj")
         return inflater.inflate(R.layout.fragment_second, container, false)
     }
 
@@ -43,11 +48,17 @@ class SecondFragment : Fragment() {
                 Toast.makeText(requireActivity(), "Eggs", Toast.LENGTH_SHORT).show()
             }
             if(chk5?.isChecked  == true){
-                Toast.makeText(requireActivity(), "Dairy", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireActivity(), "Lactose", Toast.LENGTH_SHORT).show()
             }
             if(chk6?.isChecked  == true){
                 Toast.makeText(requireActivity(), "Fish", Toast.LENGTH_SHORT).show()
             }
+            setFragmentResult("requestKey1", bundleOf("bundleKey1" to chk1?.isChecked))
+            setFragmentResult("requestKey2", bundleOf("bundleKey2" to chk2?.isChecked))
+            setFragmentResult("requestKey3", bundleOf("bundleKey3" to chk3?.isChecked))
+            setFragmentResult("requestKey4", bundleOf("bundleKey4" to chk4?.isChecked))
+            setFragmentResult("requestKey5", bundleOf("bundleKey5" to chk5?.isChecked))
+            setFragmentResult("requestKey6", bundleOf("bundleKey6" to chk6?.isChecked))
         }
     }
 }

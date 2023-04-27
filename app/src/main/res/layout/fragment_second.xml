@@ -28,7 +28,8 @@
         android:text="Peanuts"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:buttonTint="#003300" />
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -39,7 +40,8 @@
         android:text="Shellfish"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1"
+        android:buttonTint="#003300" />
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -50,7 +52,8 @@
         android:text="Soy"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        android:buttonTint="#003300" />
 
     <CheckBox
         android:id="@+id/checkBox4"
@@ -61,7 +64,8 @@
         android:text="Eggs"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+        android:buttonTint="#003300" />
 
     <CheckBox
         android:id="@+id/checkBox5"
@@ -72,7 +76,8 @@
         android:text="Dairy"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+        android:buttonTint="#003300" />
 
     <CheckBox
         android:id="@+id/checkBox6"
@@ -83,7 +88,8 @@
         android:text="Fish"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5"
+        android:buttonTint="#003300" />
 
     <Button
         android:id="@+id/buttonSub"

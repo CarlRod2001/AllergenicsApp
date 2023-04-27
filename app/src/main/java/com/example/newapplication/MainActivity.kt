@@ -33,14 +33,20 @@ class MainActivity : AppCompatActivity() {
         if (id == R.id.action_three) {
             //Toast.makeText(this, "Item Three Clicked", Toast.LENGTH_LONG).show()
             val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.add(R.id.frameLayout, ThirdFragment())
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+            return true
+        }
+        if (id == R.id.action_four) {
+            //Toast.makeText(this, "Item Three Clicked", Toast.LENGTH_LONG).show()
+            val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.add(R.id.frameLayout, FirstFragment())
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
             return true
         }
-
         return super.onOptionsItemSelected(item)
-
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

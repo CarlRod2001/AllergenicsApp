@@ -12,5 +12,9 @@
         android:title="Allergens" />
     <item
         android:id="@+id/action_three"
+        android:title="Restaurants" />
+    <item
+        android:id="@+id/action_four"
         android:title="Map" />
+
 </menu>
