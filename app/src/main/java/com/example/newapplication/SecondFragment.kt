@@ -19,8 +19,7 @@ class SecondFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        //var entriesTop = arrayOf<CharSequence>()
-        //entriesTop.add("jj")
+        var entriesTop = arrayOf<CharSequence>()
         return inflater.inflate(R.layout.fragment_second, container, false)
     }
 
